@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UProfile</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a237e; /* Dark blue background */
+    color: #333; /* Dark gray text */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow */
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Dark green background on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>User Profile & CV Edit</h1>
+  <form id="profile-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone"><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea><br>
+
+    <label for="cv">CV:</label>
+    <input type="file" id="cv" name="cv"><br>
+
+    <label for="certificates">Certificates:</label>
+    <input type="file" id="certificates" name="certificates" multiple><br>
+
+    <input type="submit" value="Save">
+  </form>
+</div>
+
+</body>
+</html>
